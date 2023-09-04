@@ -37,10 +37,10 @@ const swiper = new Swiper('.swiper-container', {
   const sr = ScrollReveal ({
     distance: '45px',
     duration: 2900,
-    reset: true
+    reset: false
   })
   
   sr.reveal('.row-text',{delay:350, origin:'top'})
   sr.reveal('.about-section-text,.about-detels,.my-detels,.skills-title,.skill-option,.projects-title,.projects-box,.servics-text-title',{delay:300, origin:'bottom'})
-  sr.reveal('.sub-box,.swiper-container,.testimonials-title,.contact-title,.contact-address,.contact-form',{delay:300, origin:'bottom'})
+  sr.reveal('.sub-box,.swiper-container,.testimonials-title,.contact-title,.contact-address,.contact-form',{delay:300,origin:'bottom'})
   

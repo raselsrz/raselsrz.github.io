@@ -529,8 +529,11 @@ main{
   position: relative;
 }
 .sub-box{
-	padding: 45px 45px 45px 45px;
-	transition: ease .50s;
+  width: 95%;
+  height: 280px;
+  margin: 0 auto;
+  padding: 25px 20px 15px 20px;
+  transition: ease .50s;
 	cursor: pointer;
   background-color: #ffffff;
   translate: 0;
@@ -542,6 +545,7 @@ main{
 	max-width: 100%;
 	width: 60px;
 	height: 60px;
+  margin-bottom: 5px;
   font-size: 22px;
   padding: 15px;
   border-radius: 50%;
