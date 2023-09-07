@@ -10,10 +10,10 @@ Menubtn.addEventListener('click', function(e) {
 /*=============typed=============*/
 
  const typed = new Typed('.typed-text', {
-    strings: ['Web Developer!','Web Designer!', 'Freelancer!'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 2000,
+    strings: ['Web Developer !','Web Designer !', 'Freelancer !'],
+    typeSpeed: 500,
+    backSpeed: 80,
+    backDelay: 5000,
     loop:true
 });
 
