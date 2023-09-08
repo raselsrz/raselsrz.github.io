@@ -11,9 +11,9 @@ Menubtn.addEventListener('click', function(e) {
 
  const typed = new Typed('.typed-text', {
     strings: ['Web Developer !','Web Designer !', 'Freelancer !'],
-    typeSpeed: 500,
+    typeSpeed: 100,
     backSpeed: 80,
-    backDelay: 5000,
+    backDelay: 1000,
     loop:true
 });
 
