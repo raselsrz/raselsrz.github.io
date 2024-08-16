@@ -44,3 +44,62 @@ const swiper = new Swiper('.swiper-container', {
   sr.reveal('.about-section-text,.about-detels,.my-detels,.skills-title,.skill-option,.projects-title,.projects-box,.servics-text-title',{delay:300, origin:'bottom'})
   sr.reveal('.sub-box,.swiper-container,.testimonials-title,.contact-title,.contact-address,.contact-form',{delay:300,origin:'bottom'})
   
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Get all the menu links
+    const menuLinks = document.querySelectorAll('nav ul li a');
+    
+    // Function to remove active class from all links
+    function removeActiveClass() {
+        menuLinks.forEach(link => {
+            link.style.color = '';
+        });
+    }
+
+    // Function to add active class to the current link
+    function addActiveClass(link) {
+        removeActiveClass();
+        link.style.color = '#58D68D'; // Adjust the color as needed
+    }
+
+    // Set the active link based on scroll position
+    window.addEventListener('scroll', function() {
+        let currentSection = '';
+        
+        menuLinks.forEach(link => {
+            const section = document.querySelector(link.getAttribute('href'));
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+
+            if (window.scrollY >= sectionTop - sectionHeight / 3) {
+                currentSection = link;
+            }
+        });
+
+        if (currentSection) {
+            addActiveClass(currentSection);
+        }
+    });
+
+    // Set the active link when clicking on the menu
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            addActiveClass(link);
+        });
+    });
+});
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const birthDate = new Date('2004-06-23'); // Use your birth date here
+        const today = new Date();
+        let age = today.getFullYear() - birthDate.getFullYear();
+        const monthDifference = today.getMonth() - birthDate.getMonth();
+
+        // Adjust age if the birth date has not occurred yet this year
+        if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+
+        document.getElementById('age').textContent = `${age} years`;
+    });

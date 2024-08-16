@@ -138,7 +138,7 @@ main{
 /* Home section styles */
 #home {
     width: 100%;
-    background-image: url("img/home-bg.JPG");
+    background-image: url("img/IMG_6321.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -823,3 +823,31 @@ footer p span{
 
 
 
+/* scroll top */
+#scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #58D68D;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for appearance */
+}
+
+#scroll-top.active {
+  display: block; /* Show button when active */
+  opacity: 1; /* Ensure button is fully opaque */
+  transform: translateY(0); /* Ensure button is in its intended position */
+  transition: 0.5s ease; /* Smooth transition for appearance */
+}
+
+#scroll-top:hover {
+  background: #45a049; /* Slightly darker background on hover */
+}
