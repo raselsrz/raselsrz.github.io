@@ -206,7 +206,7 @@ main{
 
       @media only screen and (max-width:705px){
         #home{
-          background-image: url("img/IMG_6321.jpg") !important;
+          background-image: url("img/IMG_6321.png") !important;
           background-size: cover;
           background-position: inherit;
         }
@@ -386,6 +386,12 @@ main{
 .projects-title{
   margin-top: 10px;
   padding-bottom: 20px;
+}
+
+#projects p{
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 35px;
 }
 
 .projects-title h2{
